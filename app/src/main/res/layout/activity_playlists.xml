@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/screen_background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/screen_background"
+        android:fillViewport="true"
+        android:paddingBottom="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/action_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back_arrow_imageview"
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:background="?attr/selectableItemBackground"
+                    android:src="@drawable/ic_arrow_back_black_24dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/playlist_titleTextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:gravity="center"
+                    android:maxLines="1"
+
+                    android:text="@string/playlists"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/action_bar"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="@dimen/_106sdp"
+                        android:layout_height="@dimen/_106sdp"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:src="@drawable/maxresdefault"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:id="@+id/playlist_artist_name_textview"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="Iba One"
+                        android:visibility="gone"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:text="0 Tracks"
+                                android:id="@+id/tracks_count"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12ssp" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:visibility="gone"
+                                android:text="Chillout,deep,rock...."
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/passoword_textview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_8sdp"
+                                android:background="@drawable/play_button_shape"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/_1sdp"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingRight="@dimen/_1sdp"
+                                android:paddingBottom="@dimen/_5sdp"
+                                android:text="Play"
+                                android:visibility="gone"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13ssp"
+                                tools:ignore="UnusedAttribute" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/track_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/tracklist"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:text="@string/shuffle"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp" />
+            </RelativeLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_25sdp"
+                android:visibility="gone"
+                android:id="@+id/no_result_textview"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="@string/no_result_found" />
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/track_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:fillViewport="true">
+                <!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+                <!--        android:id="@+id/swipeToRefresh"-->
+                <!--        android:layout_width="match_parent"-->
+                <!--        android:layout_height="wrap_content"-->
+                <!--        android:layout_margin="@dimen/_10sdp"-->
+
+                <!--        android:visibility="visible">-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/playlist_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+            </androidx.core.widget.NestedScrollView>
+
+            <RelativeLayout
+                android:id="@+id/artist_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/track_scrollview">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/artists_in_playlist"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:text="See All"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp" />
+            </RelativeLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_25sdp"
+                android:visibility="visible"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="@string/no_result_found" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/artists_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_below="@+id/artist_layout"
+                android:layout_margin="@dimen/_10sdp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

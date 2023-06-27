@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/screen_background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/screen_background"
+        android:fillViewport="true"
+        android:paddingBottom="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/action_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back_arrow_imageview"
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:background="?attr/selectableItemBackground"
+                    android:src="@drawable/ic_arrow_back_black_24dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/titleTextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/posts"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/no_result_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_25sdp"
+                android:text="No Result Found"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipeToRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:visibility="visible">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/posts_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

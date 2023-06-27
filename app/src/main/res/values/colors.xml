@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="purple">#9400D3</color>
+    <color name="colorAccent">#3a4ebe</color>
+    <color name="black">#000000</color>
+    <color name="hint_color">#011a4e</color>
+    <color name="text_hint_color">#d3d3d3</color>
+    <color name="light_blue">#e5ecff</color>
+    <color name="blue_background">#d30b97</color>
+    <color name="grey">#a1a1a1</color>
+    <color name="blue_color">#00bff3</color>
+    <color name="card_background_color">#00000000</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_video_transparent">#88000000</color>
+    <color name="color_black">#000000</color>
+    <color name="color_unplayed">#323232</color>
+    <color name="color_buffered">#b2b2b2</color>
+</resources>

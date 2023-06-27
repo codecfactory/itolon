@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarlayout"
+        layout="@layout/action_bar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_3sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            android:visibility="gone" />
+        <LinearLayout
+            android:id="@+id/search_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itolon_logo"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/album_search_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_background"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:drawablePadding="@dimen/_8sdp"
+                android:gravity="left|center_vertical"
+                android:hint="@string/albem_nom_artist_nom_de_musique"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categories_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:visibility="visible" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1e2541"
+            android:scrollbars="horizontal"
+            android:visibility="gone"
+            app:elevation="4dp"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="#8d2648"
+            app:tabTextColor="#ffffff" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@+id/tabLayout"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:background="#626262"
+            android:visibility="gone" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:text="Popualar Movies"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/artists_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

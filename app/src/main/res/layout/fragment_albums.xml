@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <include layout="@layout/action_bar_layout"
+        android:id="@+id/toolbarlayout"/>
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="@dimen/_6sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_below="@+id/toolbarlayout"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:textSize="@dimen/_14sdp"
+        android:hint="@string/search_track"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingStart="@dimen/_5sdp"
+        android:visibility="visible"
+        android:id="@+id/searchEditText"
+        android:background="@drawable/cell_feed_bottom_border"
+        android:maxLines="1"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:textColor="@color/grey"
+        android:drawableStart="@drawable/ic_search_black_24dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/searchEditText"
+    android:id="@+id/download_layout"
+    android:layout_marginTop="@dimen/_10sdp">
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:src="@drawable/ic_file_download_black_24dp"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Download Track"></TextView>
+
+</LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:id="@+id/artist_layout"
+    android:layout_below="@+id/download_layout"
+    android:layout_marginTop="@dimen/_10sdp">
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_25sdp"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Artists"></TextView>
+
+</LinearLayout><LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/artist_layout"
+    android:layout_marginTop="@dimen/_10sdp">
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:src="@drawable/ic_album_black_24dp"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Albums"></TextView>
+
+</LinearLayout>
+
+</RelativeLayout>

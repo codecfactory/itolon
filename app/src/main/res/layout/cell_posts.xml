@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:id="@+id/cell_layout"
+    android:background="@android:color/transparent"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:orientation="horizontal">
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/post_imageview"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:src="@drawable/maxresdefault"
+        android:scaleType="centerCrop"
+        app:sriv_left_bottom_corner_radius="@dimen/_10sdp"
+        app:sriv_left_top_corner_radius="@dimen/_10sdp"
+        app:sriv_right_bottom_corner_radius="@dimen/_10sdp"
+        app:sriv_right_top_corner_radius="@dimen/_10sdp"
+        app:sriv_oval="false" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:id="@+id/title_textview"
+        android:textSize="@dimen/_14ssp"
+        android:text="Truth is a beautiful" />
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:id="@+id/description_textview"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11ssp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:text="London Grammar" />
+</LinearLayout>
+</LinearLayout>

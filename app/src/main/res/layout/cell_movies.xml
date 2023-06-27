@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:id="@+id/cell_layout"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:background="@color/blue_background"
+    android:orientation="vertical">
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_196sdp"
+        android:src="@drawable/maxresdefault"
+        android:scaleType="centerCrop"
+        android:layout_margin="@dimen/_5sdp"
+        app:sriv_left_bottom_corner_radius="@dimen/_10sdp"
+        app:sriv_left_top_corner_radius="@dimen/_10sdp"
+        app:sriv_right_bottom_corner_radius="@dimen/_10sdp"
+        app:sriv_right_top_corner_radius="@dimen/_10sdp"
+        app:sriv_oval="false" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:gravity="left"
+        android:textSize="@dimen/_10ssp"
+        android:text="Truth is a beautiful" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9ssp"
+        android:gravity="left"
+        android:text="London Grammar" />
+</LinearLayout>

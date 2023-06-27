@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.cardview.widget.CardView android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    app:cardCornerRadius="@dimen/_5sdp"-->
+<!--    android:layout_margin="@dimen/_5sdp" -->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android">-->
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:id="@+id/cell_layout"
+    android:paddingBottom="@dimen/_5sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.15"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/song_imageview"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/maxresdefault"
+                app:civ_border_width="0dp"
+                app:civ_border_color="#FF000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:gravity="center_vertical"
+                android:id="@+id/song_title_textview"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:visibility="visible" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:gravity="center_vertical"
+                android:id="@+id/song_description_textview"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                android:visibility="visible" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:gravity="center">
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/clear_textview"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/ic_baseline_clear_24"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_1sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_1sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13ssp" />
+        </LinearLayout>
+    </LinearLayout>
+<!--</androidx.cardview.widget.CardView>-->

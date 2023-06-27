@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp">
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_round_shape"
+        android:paddingLeft="@dimen/_35sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:id="@+id/category_title_textview"
+        android:paddingRight="@dimen/_35sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="Category"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

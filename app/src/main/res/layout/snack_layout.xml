@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardElevation="3dp"
+    card_view:cardCornerRadius="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:background="@color/blue_background"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:id="@+id/message_textview"
+            android:textSize="@dimen/_12ssp"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUndo"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:background="@android:color/transparent"
+            android:text="UNDO"
+            android:visibility="invisible"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

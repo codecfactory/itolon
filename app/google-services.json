@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "384680203110",
+    "firebase_url": "https://music-streaming-e3470.firebaseio.com",
+    "project_id": "music-streaming-e3470",
+    "storage_bucket": "music-streaming-e3470.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384680203110:android:71af5af49029c6b912eea7",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384680203110-aauq2o548m98auul7o2rbqk0dn2b6flm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "b8e8d0a6eac7b6622f23114eadd2ba2c7dde1a0b"
+          }
+        },
+        {
+          "client_id": "384680203110-kb6kgg2t3f4a7a02r3qdpn6f0ke8a5hf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiyffYCnh-q_-pBOLmxXzWh7V-IDDjRZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384680203110-kb6kgg2t3f4a7a02r3qdpn6f0ke8a5hf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

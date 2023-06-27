@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/screen_background"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/action_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_65sdp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back_imageview"
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:visibility="visible"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="?attr/selectableItemBackground"
+                    android:src="@drawable/ic_arrow_back_black_24dp" />
+                <ImageView
+                    android:id="@+id/itolon_logo"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/itolon_logo"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/back_arrow_imageview"
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="?attr/selectableItemBackground"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/search_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itolon_logo"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/album_search_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blue_background"
+                    android:drawableLeft="@drawable/ic_search_black_24dp"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:gravity="left"
+                    android:hint="Albem, Nom Artist, Nom de Musique"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/search_edittext"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/my_playlists"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:src="@drawable/ic_playlist" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/your_playlists"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="0 Playlists"
+                        android:id="@+id/total_playlist_textview"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10ssp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:id="@+id/create_playlist_layout"
+                android:layout_marginLeft="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:src="@drawable/ic_add" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/create_playlist"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipeToRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:visibility="visible">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/my_playlist_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

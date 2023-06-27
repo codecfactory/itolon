@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/screen_background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/screen_background"
+        android:fillViewport="true"
+        android:paddingBottom="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".activities.MainActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_2sdp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_user_profile"
+                    android:backgroundTint="@color/white"
+                    android:gravity="left"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/user_name_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_13ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/artist_profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:text="@string/artist_profile"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_13ssp" />
+            </LinearLayout>
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_1sdp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:background="#D3D3D3" />-->
+
+            <LinearLayout
+                android:id="@+id/artist_image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:text="@string/artist_image"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_13ssp" />
+            </LinearLayout>
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_1sdp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:background="#D3D3D3" />-->
+
+            <LinearLayout
+                android:id="@+id/artist_biography_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="@string/artist_biographie"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_13ssp" />
+            </LinearLayout>
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_1sdp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:background="#D3D3D3" />-->
+
+            <LinearLayout
+                android:id="@+id/telecharge_music_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="@string/telecharger_vos_musique"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_13ssp" />
+            </LinearLayout>
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_1sdp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:background="#D3D3D3" />-->
+
+            <LinearLayout
+                android:id="@+id/telecharge_video_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="@string/telecharger_vos_musique_video"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_13ssp" />
+            </LinearLayout>
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_1sdp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:background="#D3D3D3" />-->
+
+            <LinearLayout
+                android:id="@+id/telecharge_concert_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="@string/telecharger_vos_musique_concert"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_13ssp" />
+            </LinearLayout>
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:layout_marginRight="@dimen/_13sdp"
+                android:background="@drawable/sale_image" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/round_button">
+
+                <TextView
+                    android:id="@+id/logout_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingLeft="@dimen/_58sdp"
+                    android:paddingTop="@dimen/_11sdp"
+                    android:paddingRight="@dimen/_58sdp"
+                    android:paddingBottom="@dimen/_11sdp"
+                    android:text="@string/logout"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

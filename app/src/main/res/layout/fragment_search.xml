@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/screen_background" />
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_arrow_imageview"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/search_imageview"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/search_icon"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/itolon_logo"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/itolon_logo"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Payment"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/search_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itolon_logo"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@color/blue_background">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_background"
+            android:cursorVisible="true"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:drawablePadding="@dimen/_8sdp"
+            android:gravity="left|center_vertical"
+            android:hint="Albem, Nom Artist, Nom de Musique"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mes_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_edittext"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:foreground="?attr/selectableItemBackgroundBorderless">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/mes_icon" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_6sdp"
+            android:text="@string/mes_telechargements"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+    </LinearLayout>
+
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/_1sdp"-->
+    <!--        android:layout_below="@+id/mes_layout"-->
+    <!--        android:layout_marginLeft="@dimen/_13sdp"-->
+    <!--        android:layout_marginTop="@dimen/_3sdp"-->
+    <!--        android:layout_marginRight="@dimen/_13sdp"-->
+    <!--        android:background="@color/white" />-->
+
+    <LinearLayout
+        android:id="@+id/artist_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mes_layout"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:foreground="?attr/selectableItemBackgroundBorderless">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/mic_layout" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_6sdp"
+            android:text="Artists"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+    </LinearLayout>
+
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/_1sdp"-->
+    <!--        android:layout_below="@+id/artist_layout"-->
+    <!--        android:layout_marginLeft="@dimen/_13sdp"-->
+    <!--        android:layout_marginTop="@dimen/_3sdp"-->
+    <!--        android:layout_marginRight="@dimen/_13sdp"-->
+    <!--        android:background="@color/white" />-->
+
+    <LinearLayout
+        android:id="@+id/albems_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/artist_layout"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:foreground="?attr/selectableItemBackgroundBorderless">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/albems_icon" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_6sdp"
+            android:text="@string/albems"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+    </LinearLayout>
+
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/_1sdp"-->
+    <!--        android:layout_below="@+id/albems_layout"-->
+    <!--        android:layout_marginLeft="@dimen/_13sdp"-->
+    <!--        android:layout_marginTop="@dimen/_3sdp"-->
+    <!--        android:layout_marginRight="@dimen/_13sdp"-->
+    <!--        android:background="@color/white" />-->
+
+    <LinearLayout
+        android:id="@+id/playlist_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/albems_layout"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:foreground="?attr/selectableItemBackgroundBorderless">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/playlist_icon" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_6sdp"
+            android:text="@string/playlists"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+    </LinearLayout>
+
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/_1sdp"-->
+    <!--        android:layout_below="@+id/playlist_layout"-->
+    <!--        android:layout_marginLeft="@dimen/_13sdp"-->
+    <!--        android:layout_marginTop="@dimen/_3sdp"-->
+    <!--        android:layout_marginRight="@dimen/_13sdp"-->
+    <!--        android:background="@color/white" />-->
+
+    <LinearLayout
+        android:id="@+id/stars_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playlist_layout"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:foreground="?attr/selectableItemBackgroundBorderless">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/stars_layout" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_6sdp"
+            android:text="@string/stars"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+    </LinearLayout>
+
+    <!--    <View-->
+    <!--        android:id="@+id/divider_view"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/_1sdp"-->
+    <!--        android:layout_below="@+id/stars_layout"-->
+    <!--        android:layout_marginLeft="@dimen/_13sdp"-->
+    <!--        android:layout_marginTop="@dimen/_3sdp"-->
+    <!--        android:layout_marginRight="@dimen/_13sdp"-->
+    <!--        android:background="@color/white" />-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_below="@+id/stars_layout"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/sale_image" />
+
+</RelativeLayout>

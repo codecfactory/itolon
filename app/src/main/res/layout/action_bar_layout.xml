@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp"
+    android:background="@drawable/screen_background"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+
+        <ImageView
+            android:id="@+id/back_arrow_imageview"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:visibility="visible"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/titleTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/_6sdp"
+            android:maxLines="1"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:drawablePadding="@dimen/_6sdp"
+            android:maxLines="1"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_13sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_13sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="Invite"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/_6sdp"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+</LinearLayout>
